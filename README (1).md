@@ -72,10 +72,7 @@ Xubuntu:
 
 Installing AD
 
-```
-Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+<pre><code>Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+<strong>Install-ADDSForest -DomainName fatima.local
+</strong></code></pre>
 
-```
-
-```
-```
