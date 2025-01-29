@@ -70,3 +70,12 @@ Xubuntu:
 
 `ssh administrator@10.0.17.4`
 
+Installing AD
+
+```
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+
+```
+
+```
+```
