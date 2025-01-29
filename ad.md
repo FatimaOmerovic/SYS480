@@ -2,7 +2,7 @@
 description: install chrome rdp on xubuntu
 ---
 
-# Page
+# AD
 
 3 major parts to a vCenter Deployment
 
@@ -76,3 +76,12 @@ Installing AD
 <strong>Install-ADDSForest -DomainName fatima.local
 </strong></code></pre>
 
+
+
+
+
+### Deliverable
+
+* A video that :
+  * demonstrates the test case shown (demonstrate your AD information and services from powershell)
+  * quickly reviews your documentation that supports this milestone (less than 5 minutes)
