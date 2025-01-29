@@ -74,7 +74,22 @@ Installing AD
 
 <pre><code>Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 <strong>Install-ADDSForest -DomainName fatima.local
-</strong></code></pre>
+</strong>Install-WindowsFeature -Name DNS
+Get-WindowsFeature -Name DNS*
+Add-DnsServerPrimaryZone -Name "17.0.10.in-addr.arpa" -ReplicationScope Forest
+Get-DnsServerZone
+
+# Creating A Records
+Add-DnsServerResourceRecordA -ZoneName "fatima.local" -Name "vcenter" -IPv4Address "10.0.17.3"
+Add-DnsServerResourceRecordA -ZoneName "fatima.local" -Name "480-fw" -IPv4Address "10.0.17.2"
+Add-DnsServerResourceRecordA -ZoneName "fatima.local" -Name "xubuntu-wan" -IPv4Address "10.0.17.100"
+
+# Creating PTR Records
+Add-DnsServerResourceRecordPTR -ZoneName "17.0.10.in-addr.arpa" -Name "3" -PtrDomainName "vcenter.fatima.local"
+Add-DnsServerResourceRecordPTR -ZoneName "17.0.10.in-addr.arpa" -Name "2" -PtrDomainName "480-fw.fatima.local"
+Add-DnsServerResourceRecordPTR -ZoneName "17.0.10.in-addr.arpa" -Name "100" -PtrDomainName "xubuntu-wan.fatima.local"
+Add-DnsServerResourceRecordPTR -ZoneName "17.0.10.in-addr.arpa" -Name "4" -PtrDomainName "dc-fatima.fatima.local"
+</code></pre>
 
 
 
