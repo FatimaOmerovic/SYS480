@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Page](README.md)
-* [Hypervisor Setup](hypervisor-setup.md)
+* [Hypervisor Setup](README.md)
+* [Page](<README (1).md>)
