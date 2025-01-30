@@ -93,7 +93,19 @@ Add-DnsServerResourceRecordPTR -ZoneName "17.0.10.in-addr.arpa" -Name "4" -PtrDo
 
 
 
+Enabling RDP via Powershell
 
+```
+Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Value 0
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -Name "UserAuthentication" -Value 1
+```
+
+Install DHCP
+
+```
+Install-WindowsFeature -Name DHCP -IncludeManagementTools
+
+```
 
 ### Deliverable
 
