@@ -104,10 +104,24 @@ Install DHCP
 
 ```
 Install-WindowsFeature -Name DHCP -IncludeManagementTools
-
+Add-DhcpServerInDC -DnsName "fatima.local" -IpAddress "10.0.17.4"
+$scopeStart = "10.0.17.101"
+$scopeEnd = "10.0.17.150"
+$subnetMask = "255.255.255.0"
+$router = "10.0.17.2"
+$dnsServer = "10.0.17.4"
+$scopeName = "DHCP"
+$scopeDescription = "DHCP scope for fatima.local"
 ```
 
-### Deliverable
+###
+
+Creating Domain User
+
+```
+```
+
+### DeliverableC
 
 * A video that :
   * demonstrates the test case shown (demonstrate your AD information and services from powershell) - powershell cmd that shows dns config and records if u can
