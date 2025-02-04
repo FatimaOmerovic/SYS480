@@ -10,19 +10,19 @@ Installing EXSi
 
 * Get assigned IP, plug flashdrive containing ESXi into server, access server from assigned IP.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>IPv4 Configuration</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>IPv4 Configuration</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>DNS Config</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>DNS Config</p></figcaption></figure>
 
 Navigated to Super14 IP via web
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>192.168.3.214</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>192.168.3.214</p></figcaption></figure>
 
 
 
 Clicked Storage > database1-super14 > create directory > named "ISOs" > Upload > naviagated to ISO folder and selected VMs
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>The VM's loaded into database1-super14</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>The VM's loaded into database1-super14</p></figcaption></figure>
 
 Navigated to Networking > Add standard virtual switch > NO uplink
 
