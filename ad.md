@@ -112,22 +112,26 @@ $router = "10.0.17.2"
 $dnsServer = "10.0.17.4"
 $scopeName = "DHCP"
 $scopeDescription = "DHCP scope for fatima.local"
+
+Add-DhcpServerv4Scope -Name $scopeName -StartRange $scopeStart -EndRange $scopeEnd -SubnetMask $subnetMask -Description $scopeDescription
+Set-DhcpServerv4Scope -ScopeId $scopeStart -State Active
 ```
 
 ###
 
 Creating Domain User
 
-```
-```
+<pre><code><strong>New-ADUser -SamAccountName "fatima-adm" -UserPrincipalName "fatima-adm@fatima.local" -Name "fatima-adm" -GivenName "fatima-adm" -DisplayName "fatima-adm" -AccountPassword (ConvertTo-SecureString "PASSWORD" -AsPlainText -Force) -Enabled $True
+</strong><strong>Add-AdGroupMember -Identity "Domain Admins" -Members fatima-adm
+</strong></code></pre>
 
 ### Deliverable
 
-* A video that :
-  * demonstrates the test case shown (demonstrate your AD information and services from powershell) - powershell cmd that shows dns config and records if u can
-  * quickly reviews your documentation that supports this milestone (less than 5 minutes)
-
 ```
+# Shows Reverse Zones (PTR)
 Get-DnsServerResourceRecord -ZoneName "17.0.10.in-addr.arpa"
+
+# Shows DHCP
+Get-DhcpServerv4Scope
 ```
 
