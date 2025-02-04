@@ -121,8 +121,13 @@ Creating Domain User
 ```
 ```
 
-### DeliverableC
+### Deliverable
 
 * A video that :
   * demonstrates the test case shown (demonstrate your AD information and services from powershell) - powershell cmd that shows dns config and records if u can
   * quickly reviews your documentation that supports this milestone (less than 5 minutes)
+
+```
+Get-DnsServerResourceRecord -ZoneName "17.0.10.in-addr.arpa"
+```
+
