@@ -22,3 +22,10 @@ Get-Module VMware.PowerCLI -ListAvailable
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore
 Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false
 ```
+
+Visual Studio Code
+
+```
+sudo snap install code --classic
+```
+
