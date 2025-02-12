@@ -51,4 +51,9 @@ $newvm | New-Snapshot -Name "Base"
 $linkedvm | Remove-Vm
 ```
 
-Made script.ps1, created ubuntu and winserver bases, just run the script with the video&#x20;
+Made script.ps1, created ubuntu and winserver bases, just run the script with the video \
+
+
+Sources:
+
+[https://greenmountaincyber.com/docs/topics/vmware/powercli/extracting-snapshots/](https://greenmountaincyber.com/docs/topics/vmware/powercli/extracting-snapshots/)
