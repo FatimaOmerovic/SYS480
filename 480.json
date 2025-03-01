@@ -1,0 +1,6 @@
+{
+    "vcenter_server" : "vcenter.fatima.local",
+    "vm_host" : "192.168.3.214",
+    "network" : "480-WAN",
+    "folder" : "Base"
+}
